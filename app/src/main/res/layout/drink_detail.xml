@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+          android:background="#E0E0E0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/background_light">
+            <ImageButton
+                android:id="@+id/drink_back"
+                android:background="@color/white"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/btn_reg_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="饮品详情"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/drink_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="370px"
+            android:src="@drawable/r" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:orientation="vertical"
+            android:layout_below="@id/drink_detail_image"
+            android:layout_marginTop="-160px"
+            android:background="#a0000000"
+             >
+            <TextView
+                android:id="@+id/drink_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="TextView" />
+            <TextView
+                android:id="@+id/drink_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/drink_name"
+                android:layout_marginTop="30dp"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+          android:background="#E0E0E0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/drink_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:layout_marginBottom="25px"
+                android:text="店家联系电话"
+                android:layout_marginLeft="70px"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/foo_phone"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="30dp" />
+
+            <Button
+            android:id="@+id/collect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btn_shoucang"
+            android:layout_marginLeft="20dp"
+            />
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorMain"
+                android:text="购买"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="10px"
+          android:background="#E0E0E0" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="饮品评价:"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="40px"
+                android:textSize="30px" />
+    </LinearLayout>
+
+<ListView
+    android:id="@+id/list_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#E0E0E0">
+</ListView>
+
+</LinearLayout>

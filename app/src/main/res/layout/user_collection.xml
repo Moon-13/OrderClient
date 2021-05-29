@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMain"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_shop_bt"
+                style="@style/rbt_bottom"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:text="店铺" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_drink_bt"
+                style="@style/rbt_bottom"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gray"
+                android:text="饮品" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/collect_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

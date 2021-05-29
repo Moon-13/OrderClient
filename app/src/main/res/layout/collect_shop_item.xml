@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="1px"
+        android:background="#E0E0E0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:background="@android:color/background_light" >
+
+            <ImageView
+                android:id="@+id/res_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/q" />
+
+            <LinearLayout
+                android:id="@+id/one"
+                android:layout_toRightOf="@id/res_image"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:layout_alignBottom="@+id/res_image">
+
+                <TextView
+                    android:id="@+id/res_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="TextView"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_toRightOf="@id/one"
+                    android:id="@+id/res_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="#FF8F59" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="进入"
+                android:background="@color/colorMain"
+                android:id="@+id/btn_enter"
+                android:layout_alignTop="@+id/one"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="45dp"
+                android:text="取消"
+                android:background="@color/colorMain"
+                android:id="@+id/btn_collect"
+                android:layout_alignTop="@+id/one"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:layout_marginBottom="70dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/metoptitle"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:gravity="center_horizontal"
+        android:padding="11dp"
+        android:text="我"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30px">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/my"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户名:" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户密码:" />
+
+        <EditText
+            android:id="@+id/userpass"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="联系电话:" />
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="地址:" />
+
+        <EditText
+            android:id="@+id/useraddress"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="@color/colorMain"
+        android:layout_marginLeft="150dp"
+        android:text="确定" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10px">
+        <RadioGroup
+            android:id="@+id/order_comment_radio"
+            style="@style/main_tab_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/order_radio"
+                style="@style/main_tab_bottom"
+                android:textSize="20dp"
+                android:background="@color/colorMain"
+                android:text="完成订单" />
+            <RadioButton
+                android:id="@+id/comment_radio"
+                style="@style/main_tab_bottom"
+                android:textSize="20dp"
+                android:background="@color/gray"
+                android:text="已有评论 " />
+        </RadioGroup>
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_below="@id/order_comment_radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

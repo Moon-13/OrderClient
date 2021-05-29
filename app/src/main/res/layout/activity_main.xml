@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbdbdb"
+    tools:context=".activity.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_bottom_margin"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMain"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_shouye_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/shouye"
+                android:text="首页"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_collect_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/collect"
+                android:text="收藏" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_search_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/chazhao"
+                android:text="搜索" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_wo_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/gerenxinxi"
+                android:text="我" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
